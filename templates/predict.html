@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+<h2>Welcome to the prediction system ! {{name}} </h2>
+
+<ul>
+    {% for item in values %}
+        <li>{{item}}</li>
+    {% endfor %}
+
+</ul>
+
+</body>
+</html>
